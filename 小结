@@ -96,5 +96,16 @@
       sing(){
         console.log('继承方法')
       }
-      
+  9.  箭头函数：
+                    var fn=()=>alert(1);//相当于return alert（1），且当不传参数时必须用（）
+		    fn()
+		    var f=()=>{执行的代码}
+		    var fn=(a)=>代码       ||  var fn= a =>代码
+   		    var fn=(a,b,c)=>代码|返回值     括号不能省略,否则报错
+   		       
+   		       箭头函数的this，永远指向“定义时”的父级，
+   		       事件函数是不能用箭头函数的，因为this指向改变了，是Window
+   		    "use strict"==严格模式，
+   		                        如果直接函数名（），this指向是underfine（主要是用在this，上，正常能够指向Windows的用了严格模式，就是underfine）
+   		                        如果在事件绑定中，this指向不变 
  
